@@ -16,7 +16,8 @@ import { Box, Container, Grid, Typography, Paper } from "@mui/material";
 import { styled } from "@mui/material/styles";
 
 import BradyImg from "../../../assets/images/Brady.jpeg";
-import ChrisImg from "../../../assets/images/Chris.jpeg";
+// import ChrisImg from "../../../assets/images/Chris.jpeg";
+import DennisImg from "../../../assets/images/Dennis.jpg";
 import RichardImg from "../../../assets/images/Richard.jpg";
 import AliciaImg from "../../../assets/images/aliciaauman.jpeg";
 
@@ -55,10 +56,10 @@ function MeetTheTeam() {
       imageUrl: RichardImg,
     },
     {
-      name: "Chris Leiter",
-      position: "SVP of Operations",
-      bio: "Chris Leiter leverages a distinguished career in technology and federal government contracting to deliver sophisticated solutions in cybersecurity, network management, and systems automation. His expertise, honed through strategic roles with the US State Department, the Department of Defense, DISA, and the FBI, informs his approach to technology development and implementation. A disabled US Army veteran, Chris Leiter is recognized for his deep industry knowledge and commitment to innovation in communication and analysis.",
-      imageUrl: ChrisImg,
+      name: "Dennis Chen",
+      position: "Partner, SVP of Operations",
+      bio: "Dennis graduated from Towson University of MD in Information Systems and Business. Dennis brings over 20+ years of experience leading technology services companies with a strong public sector focus such as Evurge Solutions and WorkAway IT. Dennis has decards of experience providing IT solutions and support to commercial and Federal agencies including US Department of Defense, US Department of State, US Department of Commerce, and the US Nuclear Regulatory Commission. He has designed and deployed solutions for database reporting needs, Cybersecurity and forensic analysis facilities, as well as virtual and cloud environments.",
+      imageUrl: DennisImg,
     },
     {
       name: "Brady Cusack",
@@ -87,7 +88,7 @@ function MeetTheTeam() {
         <Grid container spacing={4} justifyContent="center">
           {teamMembers.map((member, index) => (
             <Grid item key={member.name}>
-              <MemberCard display="flex" layout={index === 1 ? "reverse" : "normal"}>
+              <MemberCard display="flex" layout={index === 1 || index === 3 ? "reverse" : "normal"}>
                 <Image src={member.imageUrl} alt={member.name} />
                 <Box sx={{ padding: 2 }}>
                   <Typography gutterBottom variant="h4" component="div">
