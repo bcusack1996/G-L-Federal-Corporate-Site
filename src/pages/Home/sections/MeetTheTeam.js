@@ -40,10 +40,10 @@ const MemberCard = styled(Paper)(({ theme, layout }) => ({
 }));
 
 const Image = styled("img")({
-  width: "300px", 
+  width: "300px",
   height: "100%",
-  objectFit: "cover", 
-  borderRadius: "4px", 
+  objectFit: "cover",
+  borderRadius: "4px",
   objectPosition: "top",
 });
 
@@ -66,7 +66,7 @@ function MeetTheTeam() {
       position: "Chairman of the Board",
       bio: "Richard Gordon utilizes a comprehensive array of resources to enhance customer agility, speed, and evidence-based decision-making, allowing for preemptive problem solving. His varied experience which ranges from Capital Hill to Executive Leadership consulting equips him uniquely to contribute significantly to your success.",
       imageUrl: RichardImg,
-    },  
+    },
     {
       name: "Alicia Auman",
       position: "Federal Sales Lead",
