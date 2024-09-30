@@ -41,7 +41,6 @@ import Icon from "@mui/material/Icon";
 
 // @mui icons
 import GitHubIcon from "@mui/icons-material/GitHub";
-
 // Pages
 import ContactUs from "layouts/pages/landing-pages/contact-us";
 import Author from "layouts/pages/landing-pages/author";
