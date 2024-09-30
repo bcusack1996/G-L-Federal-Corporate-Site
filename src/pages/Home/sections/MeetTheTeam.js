@@ -40,20 +40,20 @@ const MemberCard = styled(Paper)(({ theme, layout }) => ({
 }));
 
 const Image = styled("img")({
-  width: "300px", // Makes the image fill the container width
-  height: "100%", // Fixed height for all images
-  objectFit: "cover", // Ensures the image covers the space, cropping if necessary
-  borderRadius: "4px", // Optional: Rounds the corners of the images
+  width: "300px", 
+  height: "100%",
+  objectFit: "cover", 
+  borderRadius: "4px", 
   objectPosition: "top",
 });
 
 function MeetTheTeam() {
   const teamMembers = [
     {
-      name: "Richard Gordon",
-      position: "President",
-      bio: "Richard Gordon utilizes a comprehensive array of resources to enhance customer agility, speed, and evidence-based decision-making, allowing for preemptive problem solving. His varied experience which ranges from Capital Hill to Executive Leadership consulting equips him uniquely to contribute significantly to your success.",
-      imageUrl: RichardImg,
+      name: "Brady Cusack",
+      position: "Managing Partner, Chief Executive Officer",
+      bio: "Brady Cusack is an experienced technology leader with expertise in enterprise architecture, robotics process automation, and cybersecurity operations. Brady graduated from Towson University with a B.S. in Computer Science focused on Cybersecurity. He then worked as an automation consultant for numerous small businesses where he helped lead implementations at Fortune 500 companies. Brady later founded a small managed service provider, growing it to support two federal agencies and five government contractors.",
+      imageUrl: BradyImg,
     },
     {
       name: "Dennis Chen",
@@ -62,11 +62,11 @@ function MeetTheTeam() {
       imageUrl: DennisImg,
     },
     {
-      name: "Brady Cusack",
-      position: "SVP Technology",
-      bio: "Brady Cusack is an experienced technology leader with expertise in enterprise architecture, robotics process automation, and cybersecurity operations. Brady graduated from Towson University with a B.S. in Computer Science focused on Cybersecurity. He then worked as an automation consultant for numerous small businesses where he helped lead implementations at Fortune 500 companies. Brady later founded a small managed service provider, growing it to support two federal agencies and five government contractors.",
-      imageUrl: BradyImg,
-    },
+      name: "Richard Gordon",
+      position: "Chairman of the Board",
+      bio: "Richard Gordon utilizes a comprehensive array of resources to enhance customer agility, speed, and evidence-based decision-making, allowing for preemptive problem solving. His varied experience which ranges from Capital Hill to Executive Leadership consulting equips him uniquely to contribute significantly to your success.",
+      imageUrl: RichardImg,
+    },  
     {
       name: "Alicia Auman",
       position: "Federal Sales Lead",
