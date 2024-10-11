@@ -1,3 +1,5 @@
+/* eslint-disable prettier/prettier */
+
 import React from "react";
 
 // @mui material components
@@ -15,11 +17,15 @@ import React from "react";
 import { Box, Container, Grid, Typography, Paper } from "@mui/material";
 import { styled } from "@mui/material/styles";
 
-import BradyImg from "../../../assets/images/Brady.jpeg";
+const BradyImg =
+  "https://imagedelivery.net/I44K_HLbdSFFoBMKswAB4w/c3a6ec11-9be5-4e01-d603-bb80569c8a00/public";
 // import ChrisImg from "../../../assets/images/Chris.jpeg";
-import DennisImg from "../../../assets/images/Dennis.jpg";
-import RichardImg from "../../../assets/images/Richard.jpg";
-import AliciaImg from "../../../assets/images/aliciaauman.jpeg";
+const DennisImg=
+  "https://imagedelivery.net/I44K_HLbdSFFoBMKswAB4w/a416624c-6625-47fd-48f5-8fc78f813500/public";
+const RichardImg=
+  "https://imagedelivery.net/I44K_HLbdSFFoBMKswAB4w/51da0625-f7f5-484c-1197-647e2240be00/public";
+const AliciaImg=
+  "https://imagedelivery.net/I44K_HLbdSFFoBMKswAB4w/2f059153-b047-4824-3858-1c79fec0af00/public";
 
 const MemberCard = styled(Paper)(({ theme, layout }) => ({
   display: "flex",
@@ -40,7 +46,7 @@ const MemberCard = styled(Paper)(({ theme, layout }) => ({
 }));
 
 const Image = styled("img")({
-  width: "300px",
+  width: "200px",
   height: "100%",
   objectFit: "cover",
   borderRadius: "4px",
@@ -76,7 +82,7 @@ function MeetTheTeam() {
   ];
 
   return (
-    <Box sx={{ flexGrow: 1, padding: 8, backgroundColor: "#f5f5f5" }}>
+    <Box sx={{ flexGrow: 1, padding: 2, backgroundColor: "#f5f5f5" }}>
       <Container>
         <Typography variant="h3" component="h2" justifyContent="center" gutterBottom>
           Meet the Team

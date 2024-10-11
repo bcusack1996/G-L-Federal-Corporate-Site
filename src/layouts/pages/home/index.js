@@ -17,6 +17,7 @@ Coded by www.creative-tim.com
 import Home from "pages/Home";
 import DrivenResults from "../../../pages/Home/sections/DrivenResults";
 import WhatWeOffer from "../../../pages/Home/sections/WhatWeOffer";
+import ClientsAndPartners from "pages/Home/sections/ClientsAndPartners";
 import MeetTheTeam from "../../../pages/Home/sections/MeetTheTeam";
 import ContactUs from "../../../pages/Home/sections/ContactUs";
 import Footer from "pages/Home/sections/Footer";
@@ -27,6 +28,7 @@ export default function HomePage() {
       <Home />
       <DrivenResults />
       <WhatWeOffer />
+      <ClientsAndPartners />
       <MeetTheTeam />
       <ContactUs />
       <Footer />

@@ -12,7 +12,8 @@ import MKButton from "components/MKButton";
 import MKTypography from "components/MKTypography";
 
 // Images
-import bgImage from "assets/images/bg-federal-building.jpg";
+const bgImage =
+  "https://imagedelivery.net/I44K_HLbdSFFoBMKswAB4w/3d4d8e0d-f271-480b-a9fe-63749ed14500/public";
 
 function Home() {
   const [isScrolled, setIsScrolled] = useState(false);

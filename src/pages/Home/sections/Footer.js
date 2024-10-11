@@ -15,14 +15,14 @@ function Footer() {
               Contact Us
             </Typography>
             <Box sx={{ display: "flex", alignItems: "center", mb: 1 }}>
-              <EmailIcon sx={{ mr: 1 }} /> info@glfederal.com
+              <EmailIcon sx={{ mr: 1 }} /> contact@ihsautomation.com
             </Box>
             <Box sx={{ display: "flex", alignItems: "center", mb: 1 }}>
-              <PhoneIcon sx={{ mr: 1 }} /> +1-443-842-1045
+              <PhoneIcon sx={{ mr: 1 }} /> +1-817-857-8450
             </Box>
             <Box sx={{ display: "flex", alignItems: "center" }}>
               <HomeIcon sx={{ mr: 1 }} />
-              9701 Apollo Drive, Suite 100, Largo, Maryland 20774
+              1606 Headway Cir Suite 9318 Austin, TX 78754
             </Box>
           </Grid>
           <Grid item xs={12} md={4}>
