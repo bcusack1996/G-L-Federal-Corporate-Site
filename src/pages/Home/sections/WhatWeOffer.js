@@ -20,7 +20,7 @@ function WhatWeOffer() {
       maxWidth="lg"
       style={{
         marginTop: "20px",
-        marginBottom: "40px",
+        marginBottom: "90px",
         // backgroundColor: "#49a3f1",
       }}
     >

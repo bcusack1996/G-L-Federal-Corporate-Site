@@ -29,7 +29,8 @@ const logos = [
 function ClientsAndPartners() {
   return (
     <MKBox
-      py={6}
+      py={16}
+      my={8}
       sx={{
         backgroundImage: `url(${partnerBG})`,
         backgroundSize: "cover",
@@ -47,11 +48,11 @@ function ClientsAndPartners() {
         >
           <MKTypography
   variant="h3"
-  mb={1}
+  mb={2}
   color="white"
   sx={{
     backgroundColor: "#00000090",  
-    padding: "10px 20px",         
+    padding: "16px 24px",         
     borderRadius: "8px",         
     fontWeight: "bold",        
     textShadow: "2px 2px 4px rgba(0,0,0,0.6)", 
