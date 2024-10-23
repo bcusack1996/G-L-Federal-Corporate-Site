@@ -1,10 +1,14 @@
-import React, { useState } from "react";
+/* eslint-disable prettier/prettier */
+import React, { useState, useRef } from "react";
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 import MKBox from "components/MKBox";
 import MKInput from "components/MKInput";
 import MKButton from "components/MKButton";
 import MKTypography from "components/MKTypography";
+
+import ReCAPTCHA from "react-google-recaptcha";
+
 
 function FormSimple() {
   const [formData, setFormData] = useState({
@@ -19,8 +23,20 @@ function FormSimple() {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
+  const recaptchaRef = useRef(null);
+
   const handleSubmit = async (e) => {
     e.preventDefault();
+
+    const recaptchaValue = recaptchaRef.current.getValue();
+    if (!recaptchaValue) {
+      setSubmitStatus("Please complete the reCAPTCHA.");
+      return;
+    }
+
+    // Include the reCAPTCHA token in your form data
+    const dataToSend = { ...formData, recaptcha: recaptchaValue }; 
+
     const response = await fetch(
       "https://prod-66.westus.logic.azure.com:443/workflows/f933ea14f09f4794b55d34bb27a7ef3a/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=VtZztSLE_YrZkxfYyb-NobVC0AG9KLBb-Cb6BLhcGI4",
       {
@@ -28,7 +44,7 @@ function FormSimple() {
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify(formData),
+        body: JSON.stringify(dataToSend), // Send the modified data
       }
     );
 
@@ -94,6 +110,10 @@ function FormSimple() {
                 </Grid>
               </Grid>
               <Grid container justifyContent="center" xs={12} my={2}>
+              <ReCAPTCHA
+                sitekey="6LdwcWkqAAAAAA98IWn1eYjH9fq_mlWk1nvBTYrt" // Replace with your actual site key
+                ref={recaptchaRef}
+              />
                 <MKButton type="submit" variant="gradient" color="dark" fullWidth>
                   Send Message
                 </MKButton>

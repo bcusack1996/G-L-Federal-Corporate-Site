@@ -64,7 +64,7 @@ function Home() {
             </Grid>
             <Grid item xs />
             <Grid item>
-              <Stack direction="row" spacing={2} alignItems="center" gap={2}>
+              {/* <Stack direction="row" spacing={2} alignItems="center" gap={2}>
                 <MKTypography
                   component={Link}
                   href="#"
@@ -75,7 +75,7 @@ function Home() {
                 >
                   Home
                 </MKTypography>
-              </Stack>
+              </Stack> */}
             </Grid>
           </Grid>
         </Container>
