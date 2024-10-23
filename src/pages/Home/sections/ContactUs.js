@@ -111,7 +111,7 @@ function FormSimple() {
               </Grid>
               <Grid container justifyContent="center" xs={12} my={2}>
               <ReCAPTCHA
-                sitekey="6LdwcWkqAAAAAA98IWn1eYjH9fq_mlWk1nvBTYrt" // Replace with your actual site key
+                sitekey={process.env.REACT_APP_SITE_KEY} 
                 ref={recaptchaRef}
               />
                 <MKButton type="submit" variant="gradient" color="dark" fullWidth>
