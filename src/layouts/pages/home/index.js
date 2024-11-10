@@ -15,10 +15,7 @@ Coded by www.creative-tim.com
 
 // Material Kit 2 React pages
 import Home from "pages/Home";
-import DrivenResults from "../../../pages/Home/sections/DrivenResults";
-import WhatWeOffer from "../../../pages/Home/sections/WhatWeOffer";
-import ClientsAndPartners from "pages/Home/sections/ClientsAndPartners";
-import MeetTheTeam from "../../../pages/Home/sections/MeetTheTeam";
+
 import ContactUs from "../../../pages/Home/sections/ContactUs";
 import Footer from "pages/Home/sections/Footer";
 
@@ -26,10 +23,10 @@ export default function HomePage() {
   return (
     <>
       <Home />
-      <DrivenResults />
+      {/* <DrivenResults />
       <WhatWeOffer />
       <ClientsAndPartners />
-      <MeetTheTeam />
+      <MeetTheTeam /> */}
       <ContactUs />
       <Footer />
     </>

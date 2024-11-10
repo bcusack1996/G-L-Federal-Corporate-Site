@@ -68,6 +68,10 @@ const routes = [
     name: "home",
     href: "https://www.glfederal.com",
   },
+  {
+    name: "about",
+    href: "https://www.glfederal.com/about",
+  },
 ];
 
 export default routes;

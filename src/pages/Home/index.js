@@ -59,23 +59,23 @@ function Home() {
                 py={0.8125}
                 mr={2}
               >
-                G&L Federal
+                IHS Automation
               </MKTypography>
             </Grid>
             <Grid item xs />
             <Grid item>
-              {/* <Stack direction="row" spacing={2} alignItems="center" gap={2}>
+              <Stack direction="row" spacing={2} alignItems="center" gap={2}>
                 <MKTypography
                   component={Link}
-                  href="#"
+                  href="/about"
                   variant="button"
                   color="white"
                   fontWeight="regular"
                   fontSize="1.2rem"
                 >
-                  Home
+                  About Us
                 </MKTypography>
-              </Stack> */}
+              </Stack>
             </Grid>
           </Grid>
         </Container>
@@ -98,7 +98,7 @@ function Home() {
         <Container>
           <Grid container item xs={12} md={7} lg={7} flexDirection="column" justifyContent="center">
             <MKTypography variant="h1" color="white" fontSize="5.5rem">
-              G&L Federal
+              IHS Automation
             </MKTypography>
             <MKBox
               component="div"
@@ -112,8 +112,8 @@ function Home() {
               Government
             </MKTypography>
             <Stack direction="row" spacing={1} mt={3}>
-              <a href="#customer-focused" style={{ textDecoration: "none" }}>
-                <MKButton color="white">Get Started</MKButton>
+              <a href="about" style={{ textDecoration: "none" }}>
+                <MKButton color="white">About Us</MKButton>
               </a>
               <a href="#contact" style={{ textDecoration: "none" }}>
                 <MKButton variant="text" color="white">

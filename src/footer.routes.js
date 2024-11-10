@@ -33,7 +33,7 @@ export default {
   ],
   copyright: (
     <MKTypography variant="button" fontWeight="regular">
-      All rights reserved. G&L Federal &copy; {date}
+      All rights reserved. IHS Automation &copy; {date}
       <MKTypography
         component="a"
         href=""

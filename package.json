@@ -1,10 +1,10 @@
 {
-  "name": "G&L Federal, Ltd.",
+  "name": "IHS Automation",
   "version": "2.1.0",
   "private": true,
   "author": "Oleh Smolikevych",
   "license": "See license in https://www.creative-tim.com/license",
-  "description": "G&L Federal, Ltd., Template courtesy of Creative Tim! React version of Material Kit 2 by Creative Tim",
+  "description": "IHS Automation, Template courtesy of Creative Tim! React version of Material Kit 2 by Creative Tim",
   "homepage": "https://g-l-federal-corporate-site.vercel.app/",
   "bugs": {
     "url": "https://github.com/creativetimofficial/ct-material-kit-react/issues"
